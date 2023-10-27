@@ -52,6 +52,9 @@ static noreturn void blinker (void *arg)
   chRegSetThreadName("blinker");
   while (true) {
     palToggleLine(LINE_LED1); 	
+    palToggleLine(LINE_LED2); 	
+    palToggleLine(LINE_LED3); 	
+    palToggleLine(LINE_LED4); 	
     chThdSleepMilliseconds(500);
   }
 }

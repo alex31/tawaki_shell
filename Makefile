@@ -187,7 +187,6 @@ CSRC = $(ALLCSRC) \
        $(VARIOUS)/printf.c \
        $(VARIOUS)/microrl/microrlShell.c \
        $(VARIOUS)/microrl/microrl.c \
-       $(VARIOUS)/rtcAccess.c \
        $(VARIOUS)/hal_stm32_dma.c \
        $(VARIOUS)/serial_message/simpleSerialMessage.c 
 #      $(VARIOUS)/esc_dshot.c
