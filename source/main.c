@@ -3,7 +3,7 @@
 #include <stdnoreturn.h>
 #include "stdutil.h"
 #include "ttyConsole.h"
-
+#include "ramArch.h"
 
 
 /*
@@ -26,6 +26,7 @@ int main(void)
  */
 
   halInit();
+  mpuConfigureNonCachedRam();
   chSysInit();
   initHeap();
 

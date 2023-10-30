@@ -176,7 +176,8 @@ include $(CHIBIOS)/tools/mk/autobuild.mk
 
 
 # Define linker script file here
-LDSCRIPT= $(STARTUPLD)/STM32H743xI.ld
+STARTUPLD=$(CONFDIR)/ld/
+LDSCRIPT= $(STARTUPLD)/STM32H743xI_TawakiH7.ld
 
 
 # C sources that can be compiled in ARM or THUMB mode depending on the global
@@ -187,8 +188,7 @@ CSRC = $(ALLCSRC) \
        $(VARIOUS)/printf.c \
        $(VARIOUS)/microrl/microrlShell.c \
        $(VARIOUS)/microrl/microrl.c \
-       $(VARIOUS)/hal_stm32_dma.c \
-       $(VARIOUS)/serial_message/simpleSerialMessage.c 
+       $(VARIOUS)/hal_stm32_dma.c
 #      $(VARIOUS)/esc_dshot.c
 
 
